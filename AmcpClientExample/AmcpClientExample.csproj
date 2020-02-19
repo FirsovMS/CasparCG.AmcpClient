@@ -9,11 +9,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AmcpClientExample</RootNamespace>
     <AssemblyName>AmcpClientExample</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -85,20 +86,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\StilSoft.CasparCG.AmcpClient\StilSoft.CasparCG.AmcpClient.csproj">
-      <Project>{0470180b-ae26-46a9-af72-d51271124952}</Project>
-      <Name>StilSoft.CasparCG.AmcpClient</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\StilSoft.Network\StilSoft.Network.csproj">
-      <Project>{b508b90f-1d76-41a6-aa13-1495198d63fa}</Project>
-      <Name>StilSoft.Network</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StilSoft.CasparCG.AmcpClient\StilSoft.CasparCG.AmcpClient.csproj">
+      <Project>{51572e96-f14f-4bc0-8ddd-d91913f805fe}</Project>
+      <Name>StilSoft.CasparCG.AmcpClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StilSoft.Network\StilSoft.Network.csproj">
+      <Project>{C9061C06-B77E-4F25-ADDD-31C936AE6CB6}</Project>
+      <Name>StilSoft.Network</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

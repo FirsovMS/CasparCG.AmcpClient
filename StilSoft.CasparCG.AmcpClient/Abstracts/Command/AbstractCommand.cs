@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using System;
 using System.Diagnostics;
 using System.Runtime.ExceptionServices;
@@ -30,7 +29,6 @@ namespace StilSoft.CasparCG.AmcpClient.Abstracts.Command
         public int ResponseTimeout { get; set; } = 2000;
 
         protected abstract TPacket GetPacket();
-
 
         public Task<TResponse> ExecuteAsync(ICommandConnection connection)
         {
@@ -90,7 +88,7 @@ namespace StilSoft.CasparCG.AmcpClient.Abstracts.Command
 
                     connection.Send(packet.Data);
 
-                    // If response timeout is 0, do not wait parser to complete 
+                    // If response timeout is 0, do not wait parser to complete
                     if (ResponseTimeout > 0)
                     {
                         // Wait parser to complete
