@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Conditions;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
@@ -34,8 +33,8 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         //     [loop:LOOP]
         // }
         // {
-        //     [transition:CUT,MIX,PUSH,WIPE,SLIDE] 
-        //     [duration:int] 
+        //     [transition:CUT,MIX,PUSH,WIPE,SLIDE]
+        //     [duration:int]
         //     {
         //         [tween:string]
         //         |linear
@@ -48,10 +47,10 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         // }
         // {
         //     SEEK [frame:int]
-        // } 
+        // }
         // {
         //     LENGTH [frames:int]
-        // } 
+        // }
         // {
         //     FILTER [filter:string]
         // }
@@ -84,7 +83,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         [IncludeIfIncluded(nameof(MediaFullName))]
         [CommandParameter("FILTER {0}")]
         public string Filter { get; set; }
-
 
         public PlayCommand(int? channel = null, int? layer = null, string mediaFullName = "", bool? loop = null,
                            int? seek = null, int? length = null, Transition transition = null, string filter = null)

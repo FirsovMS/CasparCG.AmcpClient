@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Abstracts.Command;
 using StilSoft.CasparCG.AmcpClient.Common.Exceptions;
 using System;

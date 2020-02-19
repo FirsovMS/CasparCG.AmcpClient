@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using System;
 
 namespace StilSoft.CasparCG.AmcpClient.Common.EventsArgs
@@ -16,7 +15,6 @@ namespace StilSoft.CasparCG.AmcpClient.Common.EventsArgs
     public class ParserCompleteEventArgs<TParserResponse> : EventArgs
     {
         public TParserResponse Response { get; }
-
 
         public ParserCompleteEventArgs(TParserResponse parserResponse)
         {

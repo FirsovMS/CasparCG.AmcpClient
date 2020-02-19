@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using System.Collections.Generic;
 
@@ -17,7 +16,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Query.Common.Response
     public class ClsCommandResponse : AmcpResponse
     {
         private readonly List<MediaFileInfo> _mediaList = new List<MediaFileInfo>();
-
 
         internal override void ProcessData(AmcpParsedData data)
         {

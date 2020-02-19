@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using System;
 
@@ -18,12 +17,10 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Data.Common
     {
         public DataFileInfo(string fullName) : base(fullName)
         {
-
         }
 
         public DataFileInfo(string fileName, string filePath) : base(fileName, filePath)
         {
-
         }
 
         public static DataFileInfo Parse(string data)

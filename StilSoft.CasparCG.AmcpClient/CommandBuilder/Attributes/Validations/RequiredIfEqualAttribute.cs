@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using System;
 using System.ComponentModel.DataAnnotations;
 
@@ -19,7 +18,6 @@ namespace StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Validations
     {
         private readonly string _propertyName;
         private readonly object _value;
-
 
         public RequiredIfEqualAttribute(string propertyName, object value)
         {

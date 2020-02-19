@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using System;
 using System.Globalization;
@@ -26,15 +25,12 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Query.Common
 
         public TemplateType TemplateType { get; set; }
 
-
         public TemplateFileInfo(string fullName) : base(fullName)
         {
-
         }
 
         public TemplateFileInfo(string fileName, string filePath) : base(fileName, filePath)
         {
-
         }
 
         public static TemplateFileInfo Parse(string data)

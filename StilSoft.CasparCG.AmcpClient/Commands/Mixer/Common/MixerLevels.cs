@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using System.ComponentModel.DataAnnotations;
@@ -64,7 +63,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common
         [NumberToStringCulture(CultureName)]
         [CommandParameter]
         public double? MaximumOutput { get; set; }
-
 
         /// <param name="minimumInput"><see cref="MinimumInput"/></param>
         /// <param name="maximumInput"><see cref="MaximumInput"/></param>

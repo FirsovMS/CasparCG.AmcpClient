@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 
 namespace StilSoft.CasparCG.AmcpClient.Commands.Cg.Common.TemplateData
@@ -16,7 +15,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Cg.Common.TemplateData
     public class TemplateDataFromDataFile : AbstractTemplateData
     {
         private readonly CasparFileInfo _fileInfo;
-
 
         public TemplateDataFromDataFile(CasparFileInfo fileInfo)
         {

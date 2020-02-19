@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Validations;
@@ -33,7 +32,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Data
         [ValueToEscapedString]
         [CommandParameter("\"{0}\"")]
         public string DataFullName { get; set; }
-
 
         public DataRetrieveCommand(string dataFullName = "")
         {

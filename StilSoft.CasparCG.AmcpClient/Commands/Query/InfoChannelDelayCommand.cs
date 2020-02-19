@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Commands.Query.Common.Response;
 
 namespace StilSoft.CasparCG.AmcpClient.Commands.Query
@@ -18,18 +17,15 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Query
     /// </summary>
     public class InfoChannelDelayCommand : AbstractInfoChannelCommandWithSubCommand<InfoChannelDelayCommandResponse>
     {
-        // INFO 
+        // INFO
         // [video_channel:int]
         // DELAY
 
         internal override string SubCommandName { get; } = "DELAY";
 
-
         public InfoChannelDelayCommand(int? channel = null)
         {
             Channel = channel;
         }
-
-        
     }
 }

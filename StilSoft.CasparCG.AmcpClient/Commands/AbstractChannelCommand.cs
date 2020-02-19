@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.Common;
 using System.ComponentModel.DataAnnotations;
@@ -18,7 +17,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands
     // Default response for all Channel commands.
     public abstract class AbstractChannelCommand : AbstractChannelCommand<AmcpResponse>
     {
-
     }
 
     public abstract class AbstractChannelCommand<TResponse> : AbstractBaseCommand<TResponse>

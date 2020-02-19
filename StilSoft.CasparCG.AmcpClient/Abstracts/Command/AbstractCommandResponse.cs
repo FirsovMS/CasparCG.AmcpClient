@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 namespace StilSoft.CasparCG.AmcpClient.Abstracts.Command
 {
     public abstract class AbstractCommandResponse<TResponseInputData>

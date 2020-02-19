@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Validations;
@@ -21,8 +20,8 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Thumbnail
     /// </summary>
     public class ThumbnailListCommand : AbstractThumbnailCommandWithSubCommand<ThumbnailListCommandResponse>
     {
-        // THUMBNAIL 
-        // LIST 
+        // THUMBNAIL
+        // LIST
         // {
         //     [sub_directory:string]
         // }
@@ -34,7 +33,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Thumbnail
         [ValueToEscapedString]
         [CommandParameter("\"{0}\"")]
         public string SubDirectory { get; set; }
-
 
         public ThumbnailListCommand(string subDirectory = "")
         {

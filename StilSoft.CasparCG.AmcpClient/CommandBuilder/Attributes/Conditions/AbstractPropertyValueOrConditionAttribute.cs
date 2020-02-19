@@ -8,14 +8,12 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 namespace StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Conditions
 {
     internal abstract class AbstractPropertyValueOrConditionAttribute : AbstractPropertyValueConditionAttribute
     {
         protected AbstractPropertyValueOrConditionAttribute(string propertyName, object value) : base(propertyName, value)
         {
-
         }
     }
 }

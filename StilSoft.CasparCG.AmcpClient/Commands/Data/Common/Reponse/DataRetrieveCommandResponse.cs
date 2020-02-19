@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 
 namespace StilSoft.CasparCG.AmcpClient.Commands.Data.Common.Reponse
@@ -16,7 +15,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Data.Common.Reponse
     public class DataRetrieveCommandResponse : AmcpResponse
     {
         public string DataValue { get; private set; }
-
 
         internal override void ProcessData(AmcpParsedData data)
         {

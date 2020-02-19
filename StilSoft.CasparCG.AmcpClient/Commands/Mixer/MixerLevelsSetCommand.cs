@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common;
 using System.ComponentModel.DataAnnotations;
@@ -25,10 +24,10 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         // {
         //     -[layer:int]
         //     |-0
-        // } 
-        // LEVELS 
+        // }
+        // LEVELS
         // {
-        //     [min-input:float] 
+        //     [min-input:float]
         //     [max-input:float]
         //     [gamma:float]
         //     [min-output:float]
@@ -40,7 +39,7 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         //             |linear
         //         }
         //         |0 linear
-        //     } 
+        //     }
         // }
 
         internal override string SubCommandName { get; } = "LEVELS";
@@ -51,7 +50,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
 
         [CommandParameter]
         public Transform Transform { get; set; }
-
 
         public MixerLevelsSetCommand(int? channel = null, int? layer = null, MixerLevels levels = null, Transform transform = null)
         {

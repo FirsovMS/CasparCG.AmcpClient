@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using System.ComponentModel.DataAnnotations;
@@ -84,7 +83,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common
         [NumberToStringCulture(CultureName)]
         [CommandParameter]
         public double? BottomLeftY { get; set; }
-
 
         /// <param name="topLeftX"><see cref="TopLeftX"/></param>
         /// <param name="topLeftY"><see cref="TopLeftY"/></param>

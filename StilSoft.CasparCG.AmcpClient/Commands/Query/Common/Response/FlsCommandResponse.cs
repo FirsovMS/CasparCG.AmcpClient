@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using System.Collections.Generic;
 
@@ -17,7 +16,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Query.Common.Response
     public class FlsCommandResponse : AmcpResponse
     {
         private readonly List<FontFileInfo> _fontList = new List<FontFileInfo>();
-
 
         internal override void ProcessData(AmcpParsedData data)
         {

@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common;
@@ -26,18 +25,18 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         // {
         //     -[layer:int]
         //     |-0
-        // } 
-        // ROTATION 
+        // }
+        // ROTATION
         // {
-        //     [angle:float] 
+        //     [angle:float]
         //     {
-        //         [duration:int] 
+        //         [duration:int]
         //         {
         //             [tween:string]
         //             |linear
         //         }
-        //         |0 linear 
-        //     } 
+        //         |0 linear
+        //     }
         // }
 
         internal override string SubCommandName { get; } = "ROTATION";
@@ -49,7 +48,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
 
         [CommandParameter]
         public Transform Transform { get; set; }
-
 
         public MixerRotationSetCommand(int? channel = null, int? layer = null, double? rotation = null, Transform transform = null)
         {

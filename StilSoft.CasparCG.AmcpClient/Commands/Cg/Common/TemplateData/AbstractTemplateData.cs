@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 namespace StilSoft.CasparCG.AmcpClient.Commands.Cg.Common.TemplateData
 {
     public abstract class AbstractTemplateData

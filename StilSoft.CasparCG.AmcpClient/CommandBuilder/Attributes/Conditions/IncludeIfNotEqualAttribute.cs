@@ -8,14 +8,12 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 namespace StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Conditions
 {
     internal class IncludeIfNotEqualAttribute : AbstractPropertyValueConditionAttribute
     {
         public IncludeIfNotEqualAttribute(string propertyName, object value) : base(propertyName, value)
         {
-
         }
 
         public override bool IsTrue(object value)

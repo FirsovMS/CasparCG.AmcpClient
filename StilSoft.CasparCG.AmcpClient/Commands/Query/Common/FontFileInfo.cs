@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using System;
 
@@ -18,15 +17,12 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Query.Common
     {
         public string FontName { get; set; }
 
-
         public FontFileInfo(string fullName) : base(fullName)
         {
-
         }
 
         public FontFileInfo(string fileName, string filePath) : base(fileName, filePath)
         {
-
         }
 
         public static FontFileInfo Parse(string data)

@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using System;
 
@@ -17,7 +16,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common.Response
     public class MixerKeyerGetCommandResponse : AmcpResponse
     {
         public bool IsKeyerEnabled { get; private set; }
-
 
         internal override void ProcessData(AmcpParsedData data)
         {

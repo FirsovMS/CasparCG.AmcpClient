@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using System;
 using System.Collections.Generic;
@@ -59,7 +58,6 @@ namespace StilSoft.CasparCG.AmcpClient.CommandBuilder
 
                 return false;
             }
-
 
             // Find all properties value with 'CommandBuilderObjectAttribute' and validate it recursively
             var properties = obj.GetType().GetProperties(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);

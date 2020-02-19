@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common;
 using System.ComponentModel.DataAnnotations;
@@ -25,8 +24,8 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         // {
         //     -[layer:int]
         //     |-0
-        // } 
-        // ANCHOR 
+        // }
+        // ANCHOR
         // {
         //     [x:float]
         //     [y:float]
@@ -37,7 +36,7 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         //             |linear
         //         }
         //         |0 linear
-        //     } 
+        //     }
         // }
 
         internal override string SubCommandName { get; } = "ANCHOR";
@@ -48,7 +47,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
 
         [CommandParameter]
         public Transform Transform { get; set; }
-
 
         public MixerAnchorSetCommand(int? channel = null, int? layer = null, MixerAnchor anchor = null, Transform transform = null)
         {

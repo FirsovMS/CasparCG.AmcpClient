@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.Commands.Basic.Common;
 using System.ComponentModel.DataAnnotations;
@@ -29,7 +28,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         [EnumDataType(typeof(LogLevel))]
         [CommandParameter]
         public LogLevel? LogLevel { get; set; }
-
 
         public LogLevelCommand(LogLevel? logLevel = null)
         {

@@ -8,14 +8,12 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 
 namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
 {
     public abstract class AbstractMixerChannelCommandWithSubCommand : AbstractMixerChannelCommandWithSubCommand<AmcpResponse>
     {
-
     }
 
     public abstract class AbstractMixerChannelCommandWithSubCommand<TResponse> : AbstractChannelCommandWithSubCommand<TResponse>

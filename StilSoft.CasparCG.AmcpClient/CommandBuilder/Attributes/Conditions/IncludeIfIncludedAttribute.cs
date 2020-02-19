@@ -8,14 +8,12 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 namespace StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Conditions
 {
     internal class IncludeIfIncludedAttribute : AbstractPropertyIncludedConditionAttribute
     {
         public IncludeIfIncludedAttribute(string propertyName) : base(propertyName)
         {
-
         }
     }
 }

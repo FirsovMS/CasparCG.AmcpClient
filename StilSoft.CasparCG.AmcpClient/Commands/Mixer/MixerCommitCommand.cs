@@ -8,8 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
-
 namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
 {
     /// <summary>
@@ -19,10 +17,9 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
     {
         // MIXER
         // [video_channel:int]
-        // COMMIT 
+        // COMMIT
 
         internal override string SubCommandName { get; } = "COMMIT";
-
 
         public MixerCommitCommand(int? channel = null)
         {

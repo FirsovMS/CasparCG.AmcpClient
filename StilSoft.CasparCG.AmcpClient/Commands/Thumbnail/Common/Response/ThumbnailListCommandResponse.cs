@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using System.Collections.Generic;
 
@@ -17,7 +16,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Thumbnail.Common.Response
     public class ThumbnailListCommandResponse : AmcpResponse
     {
         private readonly List<ThumbnailFileInfo> _thumbnailList = new List<ThumbnailFileInfo>();
-
 
         internal override void ProcessData(AmcpParsedData data)
         {

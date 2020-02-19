@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Validations;
@@ -32,10 +31,10 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         // }
         // {
         //     SEEK [frame:int]
-        // } 
+        // }
         // {
         //     LENGTH [frames:int]
-        // } 
+        // }
         // {
         //     FILTER filter:string]
         // }
@@ -63,7 +62,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
 
         [CommandParameter("FILTER {0}")]
         public string Filter { get; set; }
-
 
         public LoadCommand(int? channel = null, int? layer = null, string mediaFullName = "", bool? loop = null,
                            int? seek = null, int? length = null, string filter = null)

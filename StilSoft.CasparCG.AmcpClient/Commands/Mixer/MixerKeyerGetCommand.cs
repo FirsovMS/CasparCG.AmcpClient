@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common.Response;
 
 namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
@@ -31,7 +30,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         // }
 
         internal override string SubCommandName { get; } = "KEYER";
-
 
         public MixerKeyerGetCommand(int? channel = null, int? layer = null)
         {

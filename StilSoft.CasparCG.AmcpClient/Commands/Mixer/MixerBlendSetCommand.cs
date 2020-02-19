@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common;
@@ -26,8 +25,8 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         // {
         //     -[layer:int]
         //     |-0
-        // } 
-        // BLEND 
+        // }
+        // BLEND
         // {
         //     [blend:string]
         //     |normal
@@ -43,7 +42,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
 
         [CommandParameter]
         public Transform Transform { get; set; }
-
 
         public MixerBlendSetCommand(int? channel = null, int? layer = null, BlendMode? blendMode = null, Transform transform = null)
         {

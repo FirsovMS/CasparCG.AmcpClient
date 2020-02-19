@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Validations;
@@ -36,7 +35,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Query
         [ValueToEscapedString]
         [CommandParameter("\"{0}\"")]
         public string MediaFileName { get; set; }   // TODO caspar accept only filename not fullname ???
-
 
         public CinfCommand(string mediaFileName = "")
         {

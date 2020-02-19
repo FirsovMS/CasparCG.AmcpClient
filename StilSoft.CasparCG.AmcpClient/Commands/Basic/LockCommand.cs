@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Conditions;
 using StilSoft.CasparCG.AmcpClient.Commands.Basic.Common;
@@ -40,7 +39,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         [CommandParameter]
         public string LockPhrase { get; set; }
 
-       
         public LockCommand(int? channel = null, LockAction? action = null, string lockPhrase = "")
         {
             Channel = channel;

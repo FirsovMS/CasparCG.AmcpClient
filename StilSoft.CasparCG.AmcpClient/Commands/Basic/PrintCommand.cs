@@ -8,8 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
-
 namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
 {
     /// <summary>
@@ -21,7 +19,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         // [video_channel:int]
 
         internal override string CommandName { get; } = "PRINT";
-
 
         public PrintCommand(int? channel = null)
         {

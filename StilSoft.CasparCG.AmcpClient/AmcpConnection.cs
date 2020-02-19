@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Abstracts.Command;
 using StilSoft.CasparCG.AmcpClient.Commands.Query;
 using StilSoft.CasparCG.AmcpClient.Commands.Query.Common;
@@ -25,7 +24,6 @@ namespace StilSoft.CasparCG.AmcpClient
         private volatile Version _serverVersion;
 
         public new event EventHandler<DataReceivedEventArgs> DataReceived;
-
 
         public AmcpConnection(string hostname = "localhost", int port = 5250)
         {

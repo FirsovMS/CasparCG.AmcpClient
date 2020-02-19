@@ -8,14 +8,12 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 
 namespace StilSoft.CasparCG.AmcpClient.Commands.Thumbnail
 {
     public abstract class AbstractThumbnailCommandWithSubCommand : AbstractThumbnailCommandWithSubCommand<AmcpResponse>
     {
-
     }
 
     public abstract class AbstractThumbnailCommandWithSubCommand<TResponse> : AbstractBaseCommandWithSubCommand<TResponse>

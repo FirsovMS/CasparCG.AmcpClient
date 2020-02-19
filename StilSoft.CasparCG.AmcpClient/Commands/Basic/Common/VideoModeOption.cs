@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using StilSoft.CasparCG.AmcpClient.Common.Enums;
@@ -25,7 +24,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic.Common
         [EnumToString]
         [CommandParameter]
         public VideoMode? VideoMode { get; set; }
-
 
         public VideoModeOption(VideoMode? videoMode = null)
         {

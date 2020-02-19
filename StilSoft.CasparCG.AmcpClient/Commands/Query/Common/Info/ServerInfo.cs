@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Commands.Query.Common.Info.Channel;
 using System.Collections.Generic;
 using System.Xml.Serialization;

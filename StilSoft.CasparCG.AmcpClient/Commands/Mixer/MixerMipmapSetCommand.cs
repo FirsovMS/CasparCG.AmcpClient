@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common;
@@ -21,13 +20,13 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
     /// </summary>
     public class MixerMipmapSetCommand : AbstractMixerLayerCommandWithSubCommand
     {
-        // MIXER 
+        // MIXER
         // [video_channel:int]
         // {
         //     -[layer:int]
         //     |-0
-        // } 
-        // MIPMAP 
+        // }
+        // MIPMAP
         // {
         //     [mipmap:0,1]
         //     |0
@@ -42,7 +41,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
 
         [CommandParameter]
         public Transform Transform { get; set; }
-
 
         public MixerMipmapSetCommand(int? channel = null, int? layer = null, bool? enableMipmap = null, Transform transform = null)
         {

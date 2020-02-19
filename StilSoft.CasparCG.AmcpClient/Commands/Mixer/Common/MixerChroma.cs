@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using System.ComponentModel.DataAnnotations;
@@ -18,8 +17,8 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common
     [CommandBuilderObject]
     public class MixerChroma
     {
-        // [target_hue:float] 
-        // [hue_width:float] 
+        // [target_hue:float]
+        // [hue_width:float]
         // [min_saturation:float]
         // [min_brightness:float]
         // [softness:float]
@@ -48,7 +47,7 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common
         public double? HueWidth { get; set; }
 
         /// <summary>
-        /// The minimum saturation within 0.0-1.0 required for a color to be within the chroma window.   
+        /// The minimum saturation within 0.0-1.0 required for a color to be within the chroma window.
         /// </summary>
         [Required]
         [Range(0.0, 1.0)]
@@ -66,7 +65,7 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common
         public double? MinBrightness { get; set; }
 
         /// <summary>
-        /// The softness of the chroma keying window.        
+        /// The softness of the chroma keying window.
         /// </summary>
         [Required]
         [Range(0.0, 1.0)]
@@ -100,7 +99,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common
         [CommandParameter]
         public bool? ShowMask { get; set; }
 
-
         /// <param name="targetHue"><see cref="TargetHue"/></param>
         /// <param name="hueWidth"><see cref="HueWidth"/></param>
         /// <param name="minSaturation"><see cref="MinSaturation"/></param>
@@ -109,7 +107,7 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common
         /// <param name="spillSuppress"><see cref="SpillSuppress"/></param>
         /// <param name="spillSuppressSaturation"><see cref="SpillSuppressSaturation"/></param>
         /// <param name="showMask"><see cref="ShowMask"/></param>
-        public MixerChroma(double? targetHue = null, double? hueWidth = null, double? minSaturation = null, double? minBrightness = null, 
+        public MixerChroma(double? targetHue = null, double? hueWidth = null, double? minSaturation = null, double? minBrightness = null,
                          double? softness = null, double? spillSuppress = null, double? spillSuppressSaturation = null, bool? showMask = null)
         {
             TargetHue = targetHue;

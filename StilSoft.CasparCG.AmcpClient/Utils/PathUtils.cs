@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using System;
 using System.IO;
 
@@ -18,7 +17,6 @@ namespace StilSoft.CasparCG.AmcpClient.Utils
     {
         public const char WindowsDirectorySeparator = '\\';
         public const char UnixDirectorySeparator = '/';
-
 
         public static string UnixToWindowsPath(string path)
         {

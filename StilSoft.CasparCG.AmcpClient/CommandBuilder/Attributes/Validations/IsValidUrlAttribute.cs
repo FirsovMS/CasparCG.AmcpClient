@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using System;
 using System.ComponentModel.DataAnnotations;
 
@@ -18,7 +17,6 @@ namespace StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Validations
     internal class IsValidUrlAttribute : ValidationAttribute
     {
         private readonly bool _allowNullorEmptyStrings;
-
 
         public IsValidUrlAttribute(bool allowNullorEmptyStrings = true)
         {

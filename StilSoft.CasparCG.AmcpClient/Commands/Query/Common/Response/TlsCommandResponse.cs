@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using System.Collections.Generic;
 
@@ -17,7 +16,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Query.Common.Response
     public class TlsCommandResponse : AmcpResponse
     {
         private readonly List<TemplateFileInfo> _templateList = new List<TemplateFileInfo>();
-
 
         internal override void ProcessData(AmcpParsedData data)
         {

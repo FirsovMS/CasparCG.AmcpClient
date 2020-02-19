@@ -8,8 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
-
 namespace StilSoft.CasparCG.AmcpClient.Commands.Cg
 {
     /// <summary>
@@ -27,7 +25,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Cg
         // [cg_layer:int]
 
         internal override string SubCommandName { get; } = "NEXT";
-
 
         public CgNextCommand(int? channel = null, int? layer = null, int? cgLayer = null)
         {

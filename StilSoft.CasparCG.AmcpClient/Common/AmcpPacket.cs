@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Abstracts.Command;
 using System;
 using System.Text;
@@ -36,7 +35,6 @@ namespace StilSoft.CasparCG.AmcpClient.Common
         }
 
         public string CommandName { get; set; }
-
 
         public AmcpPacket(string data)
         {

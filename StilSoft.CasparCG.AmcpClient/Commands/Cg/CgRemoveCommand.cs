@@ -8,8 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
-
 namespace StilSoft.CasparCG.AmcpClient.Commands.Cg
 {
     /// <summary>
@@ -28,7 +26,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Cg
 
         internal override string SubCommandName { get; } = "REMOVE";
 
-       
         public CgRemoveCommand(int? channel = null, int? layer = null, int? cgLayer = null)
         {
             Channel = channel;

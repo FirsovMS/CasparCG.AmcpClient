@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Validations;
@@ -21,7 +20,7 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Thumbnail
     /// </summary>
     public class ThumbnailGenerateCommand : AbstractThumbnailCommandWithSubCommand
     {
-        // THUMBNAIL 
+        // THUMBNAIL
         // GENERATE
         // [filename:string]
 
@@ -33,7 +32,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Thumbnail
         [ValueToEscapedString]
         [CommandParameter("\"{0}\"")]
         public string ThumbnailFullName { get; set; }
-
 
         public ThumbnailGenerateCommand(string thumbnailFullName = "")
         {

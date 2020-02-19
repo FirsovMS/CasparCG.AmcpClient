@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Conditions;
 using StilSoft.CasparCG.AmcpClient.Common.Enums;
@@ -19,8 +18,8 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic.Common
     [CommandBuilderObject]
     public class Transition
     {
-        // [transition:CUT,MIX,PUSH,WIPE,SLIDE] 
-        // [duration:int] 
+        // [transition:CUT,MIX,PUSH,WIPE,SLIDE]
+        // [duration:int]
         // {
         //     [tween:string]
         //     |linear
@@ -69,7 +68,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic.Common
         [IncludeIfNotEqual(nameof(Direction), Common.Direction.Right)]
         [CommandParameter]
         public Direction? Direction { get; set; }
-
 
         public Transition(TransitionType? transitionType = null, int? duration = null, Tween? tween = null, Direction? direction = null)
         {

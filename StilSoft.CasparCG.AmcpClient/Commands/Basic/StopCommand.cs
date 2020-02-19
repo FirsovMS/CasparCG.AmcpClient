@@ -8,8 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
-
 namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
 {
     /// <summary>
@@ -25,7 +23,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         // }
 
         internal override string CommandName { get; } = "STOP";
-
 
         public StopCommand(int? channel = null, int? layer = null)
         {

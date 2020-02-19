@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common.Response;
 
 namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
@@ -20,10 +19,9 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
     {
         // MIXER
         // [video_channel:int]
-        // MASTERVOLUME 
+        // MASTERVOLUME
 
         internal override string SubCommandName { get; } = "MASTERVOLUME";
-
 
         public MixerMasterVolumeGetCommand(int? channel = null)
         {

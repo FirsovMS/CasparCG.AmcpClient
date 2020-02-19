@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +26,6 @@ namespace StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes
 
         public string Format { get; }
         public bool RemoveWhiteSpaceBeforeValue { get; }
-        
 
         public CommandParameterAttribute([CallerLineNumber]int order = 0)
         {

@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using System;
 using System.ComponentModel.DataAnnotations;
@@ -19,7 +18,6 @@ namespace StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Validations
     internal class IsValidFullNameAttribute : ValidationAttribute
     {
         private readonly bool _allowNullorEmptyStrings;
-
 
         public IsValidFullNameAttribute(bool allowNullorEmptyStrings = true)
         {

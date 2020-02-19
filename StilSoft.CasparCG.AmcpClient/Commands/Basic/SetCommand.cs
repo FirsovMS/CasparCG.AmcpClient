@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.Commands.Basic.Common;
 using System.ComponentModel.DataAnnotations;
@@ -30,7 +29,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         [Required]
         [CommandParameter]
         public AbstractSetCommandOption Option { get; set; }
-
 
         public SetCommand(int? channel = null, AbstractSetCommandOption option = null)
         {

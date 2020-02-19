@@ -8,8 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
-
 namespace StilSoft.CasparCG.AmcpClient.Commands.Cg
 {
     /// <summary>
@@ -17,7 +15,7 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Cg
     /// </summary>
     public class CgStopCommand : AbstractCgCommandWithSubCommandWithCgLayer
     {
-        // CG 
+        // CG
         // [video_channel:int]
         // {
         //     -[layer:int]
@@ -27,7 +25,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Cg
         // [cg_layer:int]
 
         internal override string SubCommandName { get; } = "STOP";
-
 
         public CgStopCommand(int? channel = null, int? layer = null, int? cgLayer = null)
         {

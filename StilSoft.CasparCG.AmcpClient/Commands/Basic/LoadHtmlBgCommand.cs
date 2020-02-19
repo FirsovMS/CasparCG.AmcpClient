@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Validations;
@@ -30,8 +29,8 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         // [HTML]
         // [url:string]
         // {
-        //     [transition:CUT,MIX,PUSH,WIPE,SLIDE] 
-        //     [duration:int] 
+        //     [transition:CUT,MIX,PUSH,WIPE,SLIDE]
+        //     [duration:int]
         //     {
         //         [tween:string]
         //         |linear
@@ -68,7 +67,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         [BooleanToString("AUTO", "")]
         [CommandParameter]
         public bool? AutoStart { get; set; }
-
 
         public LoadHtmlBgCommand(int? channel = null, int? layer = null, string url = "", bool? autoStart = null, Transition transition = null, string filter = null)
         {

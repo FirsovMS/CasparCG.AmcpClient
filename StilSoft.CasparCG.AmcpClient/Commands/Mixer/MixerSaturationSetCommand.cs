@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common;
@@ -26,18 +25,18 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         // {
         //     -[layer:int]
         //     |-0
-        // } 
-        // SATURATION 
+        // }
+        // SATURATION
         // {
-        //     [saturation:float] 
+        //     [saturation:float]
         //     {
-        //         [duration:int] 
+        //         [duration:int]
         //         {
         //             [tween:string]
         //             |linear
         //         }
-        //         |0 linear 
-        //     } 
+        //         |0 linear
+        //     }
         // }
 
         internal override string SubCommandName { get; } = "SATURATION";
@@ -50,7 +49,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
 
         [CommandParameter]
         public Transform Transform { get; set; }
-
 
         public MixerSaturationSetCommand(int? channel = null, int? layer = null, double? saturation = null, Transform transform = null)
         {

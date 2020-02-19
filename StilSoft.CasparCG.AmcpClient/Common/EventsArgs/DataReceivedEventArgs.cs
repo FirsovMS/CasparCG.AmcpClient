@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using System;
 
 namespace StilSoft.CasparCG.AmcpClient.Common.EventsArgs
@@ -16,7 +15,6 @@ namespace StilSoft.CasparCG.AmcpClient.Common.EventsArgs
     public class DataReceivedEventArgs : EventArgs
     {
         public byte[] Data { get; }
-
 
         public DataReceivedEventArgs(byte[] data)
         {

@@ -8,18 +8,20 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common.EventsArgs;
 using System;
 
 namespace StilSoft.CasparCG.AmcpClient.Abstracts.Command
 {
     public interface ICommandParser<TCommandPacket, TParserResponse>
-        where TCommandPacket : ICommandPacket 
+        where TCommandPacket : ICommandPacket
     {
         event EventHandler<ParserCompleteEventArgs<TParserResponse>> ParserComplete;
+
         event EventHandler<ParserErrorEventArgs> ParserError;
+
         void Parse(byte[] data);
+
         TCommandPacket CommandPacket { get; set; }
     }
 }

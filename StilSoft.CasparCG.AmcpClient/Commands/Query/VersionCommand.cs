@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.Commands.Query.Common;
 using StilSoft.CasparCG.AmcpClient.Commands.Query.Common.Response;
@@ -21,7 +20,7 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Query
     /// </summary>
     public class VersionCommand : AbstractBaseCommand<VersionCommandResponse>
     {
-        // VERSION 
+        // VERSION
         // {
         //     [component:string]
         // }
@@ -32,7 +31,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Query
         [EnumDataType(typeof(Component))]
         [CommandParameter]
         public Component? Component { get; set; }
-
 
         public VersionCommand(Component? component = null)
         {

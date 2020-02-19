@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient;
 using StilSoft.CasparCG.AmcpClient.Commands.Basic;
 using StilSoft.CasparCG.AmcpClient.Commands.Basic.Common;
@@ -39,7 +38,6 @@ namespace AmcpClientExample
         private readonly Version _minimumServerVersion = new Version("2.1.0.3344");
         private int? _channel;
         private int? _layer;
-
 
         public MainWindow()
         {
@@ -136,14 +134,12 @@ namespace AmcpClientExample
 
             TransitionTypeComboBox.SelectedIndex = 0;
 
-
             foreach (var tween in Enum.GetValues(typeof(Tween)))
             {
                 TransitionTweenComboBox.Items.Add(tween.ToString());
             }
 
             TransitionTweenComboBox.SelectedIndex = 0;
-
 
             foreach (var direction in Enum.GetValues(typeof(Direction)))
             {
@@ -251,9 +247,9 @@ namespace AmcpClientExample
             }, TaskScheduler.FromCurrentSynchronizationContext());
         }
 
-        #endregion
+        #endregion EXAMPLE 1
 
-        #region EXAMPLE 2 
+        #region EXAMPLE 2
 
         private async void LoadTemplatesButton_Click(object sender, RoutedEventArgs e)
         {
@@ -287,7 +283,6 @@ namespace AmcpClientExample
             VersionTextBlock.Text = "";
             OriginalHeightTextBlock.Text = "";
             OriginalWidthTextBlock.Text = "";
-
 
             var templateFileInfo = TemplatesListView.SelectedValue as TemplateFileInfo;
 
@@ -418,7 +413,7 @@ namespace AmcpClientExample
             dataPair.Value = TemplateDataPairValueTextBox.Text;
         }
 
-        #endregion
+        #endregion EXAMPLE 2
 
         #region EXAMPLE 3
 
@@ -530,7 +525,7 @@ namespace AmcpClientExample
             }, TaskScheduler.FromCurrentSynchronizationContext());
         }
 
-        #endregion
+        #endregion EXAMPLE 3
 
         #region EXAMPLE 4
 
@@ -567,7 +562,7 @@ namespace AmcpClientExample
             LoadThumbnailsButton.IsEnabled = true;
         }
 
-        #endregion
+        #endregion EXAMPLE 4
 
         private BitmapImage ToBitmapImage(byte[] data)
         {
@@ -596,9 +591,11 @@ namespace AmcpClientExample
                 case ConnectionState.Reconnecting:
                     color = Brushes.Yellow;
                     break;
+
                 case ConnectionState.Connected:
                     color = Brushes.Green;
                     break;
+
                 case ConnectionState.Disconnected:
                     color = Brushes.Red;
                     break;

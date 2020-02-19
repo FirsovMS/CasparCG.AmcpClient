@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common.EventsArgs;
 using System;
 
@@ -17,7 +16,9 @@ namespace StilSoft.CasparCG.AmcpClient.Abstracts.Command
     public interface ICommandConnection
     {
         void Send(byte[] data);
+
         event EventHandler<DataReceivedEventArgs> DataReceived;
+
         Version GetServerVersion();
     }
 }

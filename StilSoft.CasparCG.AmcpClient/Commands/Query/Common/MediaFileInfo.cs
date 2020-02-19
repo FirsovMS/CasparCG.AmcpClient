@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using System;
 using System.Globalization;
@@ -32,15 +31,12 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Query.Common
 
         public TimeSpan Duration { get; set; }
 
-
         public MediaFileInfo(string fullName) : base(fullName)
         {
-
         }
 
         public MediaFileInfo(string fileName, string filePath) : base(fileName, filePath)
         {
-
         }
 
         public static MediaFileInfo Parse(string data)

@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using System;
 
@@ -17,7 +16,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common.Response
     public class MixerBlendGetCommandResponse : AmcpResponse
     {
         public BlendMode BlendMode { get; private set; }
-
 
         internal override void ProcessData(AmcpParsedData data)
         {

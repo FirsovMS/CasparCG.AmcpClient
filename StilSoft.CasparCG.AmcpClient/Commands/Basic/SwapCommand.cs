@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Conditions;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
@@ -60,13 +59,11 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         [CommandParameter]
         public bool? Transforms { get; set; }
 
-
         public SwapCommand(int? channelA = null, int? channelB = null, bool? transforms = null) : this(channelA, null, channelB, null, transforms)
         {
-            
         }
 
-        public SwapCommand(int? channelA = null, int? layerA = null,  int? channelB = null, int? layerB = null, bool? transforms = null)
+        public SwapCommand(int? channelA = null, int? layerA = null, int? channelB = null, int? layerB = null, bool? transforms = null)
         {
             ChannelA = channelA;
             ChannelB = channelB;

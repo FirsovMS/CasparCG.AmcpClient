@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using System;
 
 namespace StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Conditions
@@ -17,7 +16,6 @@ namespace StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Conditions
     internal abstract class AbstractPropertyIncludedConditionAttribute : Attribute
     {
         public string PropertyName { get; }
-
 
         protected AbstractPropertyIncludedConditionAttribute(string propertyName)
         {

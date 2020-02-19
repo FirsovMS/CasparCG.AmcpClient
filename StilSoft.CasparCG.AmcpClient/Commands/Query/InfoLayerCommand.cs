@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Commands.Query.Common.Response;
 
 namespace StilSoft.CasparCG.AmcpClient.Commands.Query
@@ -25,7 +24,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Query
         // }
 
         internal override string CommandName { get; } = "INFO";
-
 
         public InfoLayerCommand(int? channel = null, int? layer = null)
         {

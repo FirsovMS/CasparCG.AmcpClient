@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Commands.Query.Common.Response;
 
 namespace StilSoft.CasparCG.AmcpClient.Commands.Query

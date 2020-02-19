@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common.Response;
 
 namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
@@ -18,7 +17,7 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
     /// </summary>
     public class MixerChromaGetCommand : AbstractMixerLayerCommandWithSubCommand<MixerChromaGetCommandResponse>
     {
-        // MIXER 
+        // MIXER
         // [video_channel:int]
         // {
         //     -[layer:int]
@@ -27,7 +26,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         // CHROMA
 
         internal override string SubCommandName { get; } = "CHROMA";
-
 
         public MixerChromaGetCommand(int? channel = null, int? layer = null)
         {

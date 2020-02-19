@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using StilSoft.CasparCG.AmcpClient.Commands.Cg.Common.TemplateData;
@@ -37,7 +36,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Cg
         [ValueToEscapedString]
         [CommandParameter("\"{0}\"")]
         public AbstractTemplateData TemplateData { get; set; }
-
 
         public CgUpdateCommand(int? channel = null, int? layer = null, int? cgLayer = null, AbstractTemplateData templateData = null)
         {

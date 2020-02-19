@@ -8,14 +8,12 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 namespace StilSoft.CasparCG.AmcpClient.Commands.Cg.Common.TemplateData
 {
     public class DataPair
     {
         public string Name { get; set; }
         public string Value { get; set; }
-
 
         public DataPair(string name, string value)
         {

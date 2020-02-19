@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using System.Globalization;
 
@@ -17,7 +16,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common.Response
     public class MixerBrightnessGetCommandResponse : AmcpResponse
     {
         public double Brightness { get; private set; }
-
 
         internal override void ProcessData(AmcpParsedData data)
         {

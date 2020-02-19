@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using System;
 using System.Text.RegularExpressions;
@@ -18,7 +17,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Query.Common.Response
     public class VersionCommandResponse : AmcpResponse
     {
         public Version Version { get; private set; }
-
 
         internal override void ProcessData(AmcpParsedData data)
         {

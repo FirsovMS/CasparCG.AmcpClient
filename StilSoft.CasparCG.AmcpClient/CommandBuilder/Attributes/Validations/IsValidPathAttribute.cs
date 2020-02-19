@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Utils;
 using System;
 using System.ComponentModel.DataAnnotations;
@@ -19,7 +18,6 @@ namespace StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Validations
     internal class IsValidPathAttribute : ValidationAttribute
     {
         private readonly bool _allowNullorEmptyStrings;
-
 
         public IsValidPathAttribute(bool allowNullorEmptyStrings = true)
         {
@@ -34,7 +32,7 @@ namespace StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Validations
                 return _allowNullorEmptyStrings ? ValidationResult.Success : new ValidationResult(errorMessage);
 
             if (!(value is string))
-               throw new InvalidOperationException($"'{nameof(IsValidPathAttribute)}' attribute can be used only on 'string' value type properties.");
+                throw new InvalidOperationException($"'{nameof(IsValidPathAttribute)}' attribute can be used only on 'string' value type properties.");
 
             return PathUtils.IsValidPath(value.ToString()) ? ValidationResult.Success : new ValidationResult(errorMessage);
         }

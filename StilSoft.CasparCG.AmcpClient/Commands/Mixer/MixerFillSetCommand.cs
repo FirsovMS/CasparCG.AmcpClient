@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common;
 using System.ComponentModel.DataAnnotations;
@@ -25,8 +24,8 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         // {
         //     -[layer:int]
         //     |-0
-        // } 
-        // FILL 
+        // }
+        // FILL
         // {
         //     [x:float]
         //     [y:float]
@@ -39,7 +38,7 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         //             |linear
         //         }
         //         |0 linear
-        //     } 
+        //     }
         // }
 
         internal override string SubCommandName { get; } = "FILL";
@@ -50,7 +49,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
 
         [CommandParameter]
         public Transform Transform { get; set; }
-
 
         public MixerFillSetCommand(int? channel = null, int? layer = null, MixerFill fill = null, Transform transform = null)
         {

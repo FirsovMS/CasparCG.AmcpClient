@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using System;
 
@@ -18,12 +17,11 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common.Response
     {
         public bool IsMipmapEnabled { get; private set; }
 
-
         internal override void ProcessData(AmcpParsedData data)
         {
             base.ProcessData(data);
 
-            IsMipmapEnabled = Convert.ToBoolean(Convert.ToInt32(data.Data[1]));;
+            IsMipmapEnabled = Convert.ToBoolean(Convert.ToInt32(data.Data[1])); ;
         }
     }
 }

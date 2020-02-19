@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Conditions;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
@@ -22,7 +21,6 @@ namespace StilSoft.CasparCG.AmcpClient.CommandBuilder
     internal class CommandStringBuilder
     {
         private HashSet<Tuple<string, string, string>> _checkedProperty;
-
 
         public string BuildString(object obj)
         {
@@ -39,7 +37,6 @@ namespace StilSoft.CasparCG.AmcpClient.CommandBuilder
             // Prevent "StackOverflowException" (this should never happen)
             if (++deepLevel == maxDeepLevel)
                 throw new InvalidOperationException("Recursive function call exceeded the permitted deep level.");
-
 
             var finalString = new StringBuilder();
 
@@ -66,7 +63,6 @@ namespace StilSoft.CasparCG.AmcpClient.CommandBuilder
 
                     continue;
                 }
-
 
                 // Get "CommandParameterAttribute" from property
                 var commandParameterAttribute = property.GetCustomAttribute<CommandParameterAttribute>();
@@ -128,7 +124,6 @@ namespace StilSoft.CasparCG.AmcpClient.CommandBuilder
             if (string.IsNullOrWhiteSpace(GetConvertedPropertyValue(obj, propertyInfo)))
                 return false;
 
-
             foreach (var propertyAttribute in propertyInfo.GetCustomAttributes<AbstractPropertyIncludedConditionAttribute>())
             {
                 // Track checked property-attributes and ignore it if already checked, to prevent recursive dead loop
@@ -149,7 +144,6 @@ namespace StilSoft.CasparCG.AmcpClient.CommandBuilder
                     propertyAttribute is IncludeIfNotIncludedAttribute && canIncludeProperty)
                     return false;
             }
-
 
             var hasValueConditionAttribute = false;
             var wasTrue = false;
@@ -178,7 +172,6 @@ namespace StilSoft.CasparCG.AmcpClient.CommandBuilder
 
             if (hasValueConditionAttribute && !wasTrue)
                 return false;
-
 
             return true;
         }

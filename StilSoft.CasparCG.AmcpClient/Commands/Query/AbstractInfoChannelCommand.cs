@@ -8,14 +8,12 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 
 namespace StilSoft.CasparCG.AmcpClient.Commands.Query
 {
     public abstract class AbstractInfoChannelCommand : AbstractInfoChannelCommand<AmcpResponse>
     {
-
     }
 
     public abstract class AbstractInfoChannelCommand<TResponse> : AbstractChannelCommand<TResponse>

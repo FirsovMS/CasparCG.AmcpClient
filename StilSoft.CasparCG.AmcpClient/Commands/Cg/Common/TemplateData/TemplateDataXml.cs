@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -19,7 +18,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Cg.Common.TemplateData
     public class TemplateDataXml : AbstractTemplateData
     {
         private readonly List<DataPair> _dataPairs;
-
 
         public TemplateDataXml()
         {

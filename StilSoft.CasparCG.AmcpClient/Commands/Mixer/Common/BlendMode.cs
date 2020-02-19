@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using System.ComponentModel;
 
 namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common
@@ -27,26 +26,37 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common
         Exclusion,
         Screen,
         Overlay,
+
         [Description("Soft_light")]
         SoftLight,
+
         [Description("Hard_light")]
         HardLight,
+
         [Description("Color_dodge")]
         ColorDodge,
+
         [Description("Color_burn")]
         ColorBurn,
+
         [Description("Linear_dodge")]
         LinearDodge,
+
         [Description("Linear_burn")]
         LinearBurn,
+
         [Description("Linear_light")]
         LinearLight,
+
         [Description("Vivid_light")]
         VividLight,
+
         [Description("Pin_light")]
         PinLight,
+
         [Description("Hard_mix")]
         HardMix,
+
         Reflect,
         Glow,
         Phoenix,

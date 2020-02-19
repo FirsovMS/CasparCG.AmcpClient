@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using StilSoft.CasparCG.AmcpClient.Utils;
 using System;
@@ -20,7 +19,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common.Response
     {
         public bool IsChromaEnabled { get; private set; }
         public MixerChroma Chroma { get; private set; }
-
 
         internal override void ProcessData(AmcpParsedData data)
         {

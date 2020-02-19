@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Conditions;
 using System.ComponentModel.DataAnnotations;
@@ -39,11 +38,10 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
 
         [CommandParameter]
         public string Consumer { get; set; }
-        
+
         [IncludeIfIncluded(nameof(Consumer))]
         [CommandParameter]
         public string Parameters { get; set; }
-
 
         public RemoveCommand(int? channel = null, string consumer = "", string parameters = "")
         {

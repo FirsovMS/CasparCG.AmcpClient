@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Conditions;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
@@ -23,18 +22,18 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
     /// </summary>
     public class MixerChromaSetCommand : AbstractMixerLayerCommandWithSubCommand
     {
-        // MIXER 
+        // MIXER
         // [video_channel:int]
         // {
         //     -[layer:int]
         //     |-0
         // }
-        // CHROMA 
+        // CHROMA
         // {
-        //     [enable:0,1] 
+        //     [enable:0,1]
         //     {
-        //         [target_hue:float] 
-        //         [hue_width:float] 
+        //         [target_hue:float]
+        //         [hue_width:float]
         //         [min_saturation:float]
         //         [min_brightness:float]
         //         [softness:float]
@@ -74,10 +73,9 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         /// <summary>
         /// Chroma keyer transformation.
         /// </summary>
-        [IncludeIfEqual(nameof(EnableChroma), true)] 
+        [IncludeIfEqual(nameof(EnableChroma), true)]
         [CommandParameter]
         public Transform Transform { get; set; }
-
 
         /// <param name="channel"><see cref="AbstractChannelCommand.Channel"/></param>
         /// <param name="layer"><see cref="AbstractLayerCommand.Layer"/></param>

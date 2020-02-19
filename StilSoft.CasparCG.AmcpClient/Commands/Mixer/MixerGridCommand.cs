@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common;
 using System.ComponentModel.DataAnnotations;
@@ -22,16 +21,16 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
     {
         // MIXER
         // [video_channel:int]
-        // GRID 
-        // [resolution:int] 
+        // GRID
+        // [resolution:int]
         // {
-        //     [duration:int] 
+        //     [duration:int]
         //     {
         //         [tween:string]
         //         |linear
         //     }
-        //     |0 linear 
-        // } 
+        //     |0 linear
+        // }
 
         internal override string SubCommandName { get; } = "GRID";
 
@@ -42,7 +41,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
 
         [CommandParameter]
         public Transform Transform { get; set; }
-
 
         public MixerGridCommand(int? channel = null, int? resolution = null, Transform transform = null)
         {

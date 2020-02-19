@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Validations;
@@ -25,7 +24,7 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Query
         // {
         //     [sub_directory:string]
         // }
-        
+
         internal override string CommandName { get; } = "CLS";
 
         [IsValidPath]
@@ -33,7 +32,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Query
         [ValueToEscapedString]
         [CommandParameter("\"{0}\"")]
         public string SubDirectory { get; set; }
-
 
         public ClsCommand(string subDirectory = null)
         {

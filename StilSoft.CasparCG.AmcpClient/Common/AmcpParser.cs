@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Abstracts.Command;
 using StilSoft.CasparCG.AmcpClient.Common.EventsArgs;
 using System;
@@ -36,8 +35,8 @@ namespace StilSoft.CasparCG.AmcpClient.Common
         public AmcpPacket CommandPacket { get; set; }
 
         public event EventHandler<ParserCompleteEventArgs<AmcpParsedData>> ParserComplete;
-        public event EventHandler<ParserErrorEventArgs> ParserError;
 
+        public event EventHandler<ParserErrorEventArgs> ParserError;
 
         public AmcpParser()
         {
@@ -91,8 +90,10 @@ namespace StilSoft.CasparCG.AmcpClient.Common
             {
                 case ParserState.ExpectingHeader:
                     return ParseHeader(line);
+
                 case ParserState.ExpectingOneLineData:
                     return ParseOneLineData(line);
+
                 case ParserState.ExpectingMultilineData:
                     return ParseMultiLineData(line);
             }
@@ -165,7 +166,7 @@ namespace StilSoft.CasparCG.AmcpClient.Common
                     _parserState = ParserState.ExpectingOneLineData;
                     break;
 
-                // Expecting multi line data    
+                // Expecting multi line data
                 case AmcpReturnCode.OkMultiData:
                     _parserState = ParserState.ExpectingMultilineData;
                     break;

@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using System;
 
 namespace StilSoft.Network.EventsArgs
@@ -16,7 +15,6 @@ namespace StilSoft.Network.EventsArgs
     public class ConnectionStateChangedEventArgs : EventArgs
     {
         public ConnectionState State { get; }
-
 
         public ConnectionStateChangedEventArgs(ConnectionState state)
         {

@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Abstracts.Command;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
@@ -21,7 +20,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands
     // Default response for all commands.
     public abstract class AbstractBaseCommand : AbstractBaseCommand<AmcpResponse>
     {
-
     }
 
     [CommandBuilderObject]
@@ -33,7 +31,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands
         internal abstract string CommandName { get; }
 
         internal bool DontCheckServerVersion { get; set; }
-
 
         protected override AmcpPacket GetPacket()
         {

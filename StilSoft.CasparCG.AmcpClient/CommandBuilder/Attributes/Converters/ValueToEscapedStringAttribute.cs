@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 namespace StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters
 {
     internal class ValueToEscapedStringAttribute : AbstractValueToStringConverterAttribute

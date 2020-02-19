@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common.Response;
 
 namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
@@ -23,11 +22,10 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         // {
         //     -[layer:int]
         //     |-0
-        // } 
-        // ROTATION 
+        // }
+        // ROTATION
 
         internal override string SubCommandName { get; } = "ROTATION";
-
 
         public MixerRotationGetCommand(int? channel = null, int? layer = null)
         {

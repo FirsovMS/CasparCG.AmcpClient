@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common;
 using System.ComponentModel.DataAnnotations;
@@ -25,10 +24,10 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         // {
         //     -[layer:int]
         //     |-0
-        // } 
-        // PERSPECTIVE 
+        // }
+        // PERSPECTIVE
         // {
-        //     [top-left-x:float] 
+        //     [top-left-x:float]
         //     [top-left-y:float]
         //     [top-right-x:float]
         //     [top-right-y:float]
@@ -43,7 +42,7 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         //             |linear
         //         }
         //         |0 linear
-        //     } 
+        //     }
         // }
 
         internal override string SubCommandName { get; } = "PERSPECTIVE";
@@ -54,7 +53,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
 
         [CommandParameter]
         public Transform Transform { get; set; }
-
 
         public MixerPerspectiveSetCommand(int? channel = null, int? layer = null, MixerPerspective perspective = null, Transform transform = null)
         {

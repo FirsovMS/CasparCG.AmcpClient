@@ -8,8 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
-
 namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
 {
     /// <summary>
@@ -22,10 +20,9 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         // {
         //     -[layer:int]
         // }
-        // CLEAR 
+        // CLEAR
 
         internal override string SubCommandName { get; } = "CLEAR";
-
 
         public MixerClearCommand(int? channel = null, int? layer = null)
         {

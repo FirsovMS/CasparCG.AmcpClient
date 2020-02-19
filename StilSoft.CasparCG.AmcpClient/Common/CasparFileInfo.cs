@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Utils;
 using System;
 using System.IO;
@@ -19,7 +18,6 @@ namespace StilSoft.CasparCG.AmcpClient.Common
     {
         private string _fileName;
         private string _filePath;
-
 
         public string FileName
         {
@@ -49,7 +47,6 @@ namespace StilSoft.CasparCG.AmcpClient.Common
         }
 
         public string FullName => PathUtils.WindowsToUnixPath(Path.Combine(FilePath, FileName));
-
 
         public CasparFileInfo(string fullName)
         {

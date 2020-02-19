@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.Common;
 using System.ComponentModel.DataAnnotations;
@@ -17,7 +16,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands
 {
     public abstract class AbstractLayerCommandWithSubCommand : AbstractLayerCommandWithSubCommand<AmcpResponse>
     {
-        
     }
 
     public abstract class AbstractLayerCommandWithSubCommand<TResponse> : AbstractLayerCommand<TResponse>

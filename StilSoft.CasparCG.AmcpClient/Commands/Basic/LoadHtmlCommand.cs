@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Validations;
@@ -44,7 +43,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
 
         [CommandParameter("FILTER {0}")]
         public string Filter { get; set; }
-
 
         public LoadHtmlCommand(int? channel = null, int? layer = null, string url = "", string filter = null)
         {

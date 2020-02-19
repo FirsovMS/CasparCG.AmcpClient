@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using System;
 
 namespace StilSoft.CasparCG.AmcpClient.Common.EventsArgs
@@ -16,7 +15,6 @@ namespace StilSoft.CasparCG.AmcpClient.Common.EventsArgs
     public class ParserErrorEventArgs : EventArgs
     {
         public Exception Exception { get; }
-
 
         public ParserErrorEventArgs(Exception exception)
         {

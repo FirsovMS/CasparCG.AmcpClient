@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using System.ComponentModel.DataAnnotations;
@@ -22,7 +21,7 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
     {
         // MIXER
         // [video_channel:int]
-        // STRAIGHT_ALPHA_OUTPUT 
+        // STRAIGHT_ALPHA_OUTPUT
         // {
         //     [straight_alpha:0,1|0]
         // }
@@ -33,7 +32,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         [BooleanToString("1", "0")]
         [CommandParameter]
         public bool? EnableStraightAlpha { get; set; }
-
 
         public MixerStraightAlphaOutputSetCommand(int? channel = null, bool? enableStraightAlpha = null)
         {

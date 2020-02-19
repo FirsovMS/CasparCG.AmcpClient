@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Commands.Query.Common.Info.Queue;
 using StilSoft.CasparCG.AmcpClient.Common;
 using StilSoft.CasparCG.AmcpClient.Utils;
@@ -19,7 +18,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Query.Common.Response
     {
         public string QueuesInfoXml { get; private set; }
         public QueuesInfo QueuesInfo { get; private set; }
-
 
         internal override void ProcessData(AmcpParsedData data)
         {

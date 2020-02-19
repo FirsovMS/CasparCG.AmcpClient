@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Validations;
@@ -32,8 +31,8 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         //     [loop:LOOP]
         // }
         // {
-        //     [transition:CUT,MIX,PUSH,WIPE,SLIDE] 
-        //     [duration:int] 
+        //     [transition:CUT,MIX,PUSH,WIPE,SLIDE]
+        //     [duration:int]
         //     {
         //         [tween:string]
         //         |linear
@@ -46,10 +45,10 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         // }
         // {
         //     SEEK [frame:int]
-        // } 
+        // }
         // {
         //     LENGTH [frames:int]
-        // } 
+        // }
         // {
         //     FILTER [filter:string]
         // }
@@ -88,7 +87,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         [BooleanToString("AUTO", "")]
         [CommandParameter]
         public bool? AutoStart { get; set; }
-
 
         public LoadBgCommand(int? channel = null, int? layer = null, string mediaFullName = "", bool? autoStart = null, bool? loop = null,
                              int? seek = null, int? length = null, Transition transition = null, string filter = null)

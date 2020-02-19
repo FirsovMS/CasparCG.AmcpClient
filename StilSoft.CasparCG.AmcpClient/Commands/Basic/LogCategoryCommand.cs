@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using StilSoft.CasparCG.AmcpClient.Commands.Basic.Common;
@@ -36,7 +35,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         [BooleanToString("1", "0")]
         [CommandParameter]
         public bool? EnableLogCategory { get; set; }
-
 
         public LogCategoryCommand(LogCategory? logCategory = null, bool? enableLogCategory = null)
         {

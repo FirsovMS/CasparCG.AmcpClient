@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Conditions;
 using StilSoft.CasparCG.AmcpClient.Common;
 
@@ -16,7 +15,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Cg
 {
     public abstract class AbstractCgCommandWithSubCommandNoCgLayer : AbstractCgCommandWithSubCommandNoCglayer<AmcpResponse>
     {
-
     }
 
     public abstract class AbstractCgCommandWithSubCommandNoCglayer<TResponse> : AbstractLayerCommandWithSubCommand<TResponse>

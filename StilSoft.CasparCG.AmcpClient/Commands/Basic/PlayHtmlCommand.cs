@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Conditions;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
@@ -27,15 +26,15 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         // {
         //     -[layer:int]
         // }
-        // { 
-        //     [HTML] 
+        // {
+        //     [HTML]
         // }
         // {
         //     [url:string]
         // }
         // {
-        //     [transition:CUT,MIX,PUSH,WIPE,SLIDE] 
-        //     [duration:int] 
+        //     [transition:CUT,MIX,PUSH,WIPE,SLIDE]
+        //     [duration:int]
         //     {
         //         [tween:string]
         //         |linear
@@ -63,11 +62,10 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         [IncludeIfIncluded(nameof(Url))]
         [CommandParameter]
         public Transition Transition { get; set; }
-        
+
         [IncludeIfIncluded(nameof(Url))]
         [CommandParameter("FILTER {0}")]
         public string Filter { get; set; }
-
 
         public PlayHtmlCommand(int? channel = null, int? layer = null, string url = "", Transition transition = null, string filter = null)
         {

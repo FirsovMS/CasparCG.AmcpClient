@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common.Response;
 
 namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
@@ -23,11 +22,10 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         // {
         //     -[layer:int]
         //     |-0
-        // } 
-        // PERSPECTIVE 
+        // }
+        // PERSPECTIVE
 
         internal override string SubCommandName { get; } = "PERSPECTIVE";
-
 
         public MixerPerspectiveGetCommand(int? channel = null, int? layer = null)
         {

@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using StilSoft.CasparCG.AmcpClient.Utils;
 using System.Globalization;
@@ -18,7 +17,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common.Response
     public class MixerAnchorGetCommandResponse : AmcpResponse
     {
         public MixerAnchor Anchor { get; private set; }
-
 
         internal override void ProcessData(AmcpParsedData data)
         {

@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Validations;
@@ -28,7 +27,7 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Cg
         //     -[layer:int]
         //     |-9999
         // }
-        // ADD 
+        // ADD
         // [cg_layer:int]
         // [template:string]
         // [play-on-load:0,1]
@@ -56,7 +55,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Cg
         [ValueToEscapedString]
         [CommandParameter("\"{0}\"")]
         public AbstractTemplateData TemplateData { get; set; }
-
 
         public CgAddCommand(int? channel = null, int? layer = null, int? cgLayer = null,
                             string templateFullName = "", bool? autoPlay = null, AbstractTemplateData templateData = null)

@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.Network.EventsArgs;
 using System;
 using System.Net.Sockets;
@@ -37,7 +36,9 @@ namespace StilSoft.Network
         private bool _externalDisconnectCall;
 
         public event EventHandler<ConnectionStateChangedEventArgs> ConnectionStateChanged;
+
         public event EventHandler<DataReceivedEventArgs> DataReceived;
+
         public event EventHandler<ErrorEventArgs> InternalError;
 
         public ConnectionState State { get; private set; } = ConnectionState.Disconnected;
@@ -50,11 +51,13 @@ namespace StilSoft.Network
         public int ReceiveBufferSize { get; set; } = 16 * 1024;
         public bool AutoConnect { get; set; }
         public bool AutoReconnect { get; set; }
+
         public int AutoReconnectInterval
         {
             get { return (int)_autoReconnectTimer.Interval; }
             set { _autoReconnectTimer.Interval = value; }
         }
+
         public int ReconnectAttempts { get; set; } = 10;
 
         public bool KeepAliveEnable
@@ -89,7 +92,6 @@ namespace StilSoft.Network
                 KeepAlive(KeepAliveEnable, KeepAliveTime, KeepAliveInterval);
             }
         }
-
 
         public ServerConnection()
         {
@@ -127,7 +129,6 @@ namespace StilSoft.Network
         {
             Dispose(false);
         }
-
 
         public Task ConnectAsync()
         {

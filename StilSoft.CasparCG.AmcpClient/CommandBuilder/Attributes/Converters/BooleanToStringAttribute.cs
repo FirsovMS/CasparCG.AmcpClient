@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using System;
 
 namespace StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters
@@ -17,7 +16,6 @@ namespace StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters
     {
         public string TrueValue { get; set; }
         public string FalseValue { get; set; }
-
 
         public BooleanToStringAttribute(string trueValue, string falseValue)
         {

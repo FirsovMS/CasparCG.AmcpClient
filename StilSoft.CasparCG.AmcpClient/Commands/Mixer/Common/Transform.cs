@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Conditions;
 using StilSoft.CasparCG.AmcpClient.Common.Enums;
@@ -43,7 +42,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common
         [IncludeIfNotEqual(nameof(Tween), AmcpClient.Common.Enums.Tween.Linear)]
         [CommandParameter]
         public Tween? Tween { get; set; }
-
 
         /// <param name="duration"><see cref="Duration"/> </param>
         /// <param name="tween"><see cref="Tween"/> </param>

@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using StilSoft.CasparCG.AmcpClient.Commands.Mixer.Common;
@@ -26,18 +25,18 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         // {
         //     -[layer:int]
         //     |-0
-        // } 
-        // VOLUME 
+        // }
+        // VOLUME
         // {
-        //     [volume:float] 
+        //     [volume:float]
         //     {
-        //         [duration:int] 
+        //         [duration:int]
         //         {
         //             [tween:string]
         //             |linear
         //         }
-        //         |0 linear 
-        //     } 
+        //         |0 linear
+        //     }
         // }
 
         internal override string SubCommandName { get; } = "VOLUME";
@@ -50,7 +49,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
 
         [CommandParameter]
         public Transform Transform { get; set; }
-
 
         public MixerVolumeSetCommand(int? channel = null, int? layer = null, double? volume = null, Transform transform = null)
         {

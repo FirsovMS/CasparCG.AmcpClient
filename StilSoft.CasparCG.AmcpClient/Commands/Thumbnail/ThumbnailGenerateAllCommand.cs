@@ -8,8 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
-
 namespace StilSoft.CasparCG.AmcpClient.Commands.Thumbnail
 {
     /// <summary>
@@ -17,7 +15,7 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Thumbnail
     /// </summary>
     public class ThumbnailGenerateAllCommand : AbstractThumbnailCommandWithSubCommand
     {
-        // THUMBNAIL 
+        // THUMBNAIL
         // GENERATE_ALL
 
         internal override string SubCommandName { get; } = "GENERATE_ALL";

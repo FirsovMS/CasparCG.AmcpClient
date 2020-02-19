@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using System;
 
@@ -19,7 +18,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Thumbnail.Common.Response
         private byte[] _thumbnailData;
 
         public string ThumbnailBase64 { get; private set; }
-
 
         internal override void ProcessData(AmcpParsedData data)
         {

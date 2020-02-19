@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using System.Collections.Generic;
 
@@ -17,7 +16,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Data.Common.Reponse
     public class DataListCommandResponse : AmcpResponse
     {
         private readonly List<DataFileInfo> _dataList = new List<DataFileInfo>();
-
 
         internal override void ProcessData(AmcpParsedData data)
         {

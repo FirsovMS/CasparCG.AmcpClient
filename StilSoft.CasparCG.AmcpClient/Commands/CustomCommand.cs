@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 
 namespace StilSoft.CasparCG.AmcpClient.Commands
@@ -33,7 +32,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands
         internal override string CommandName => CommandString;
 
         public string CommandString { get; set; }
-
 
         public CustomCommand(string commandString = "")
         {

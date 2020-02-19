@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using System;
 
 namespace StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes
@@ -19,6 +18,5 @@ namespace StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes
     [AttributeUsage(AttributeTargets.Class)]
     public class CommandBuilderObjectAttribute : Attribute
     {
-        
     }
 }

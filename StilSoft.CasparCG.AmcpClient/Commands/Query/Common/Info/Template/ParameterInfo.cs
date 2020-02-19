@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using System.Xml.Serialization;
 
 namespace StilSoft.CasparCG.AmcpClient.Commands.Query.Common.Info.Template

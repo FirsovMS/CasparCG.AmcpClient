@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using System.ComponentModel.DataAnnotations;
 
@@ -34,7 +33,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Cg
         [Required]
         [CommandParameter]
         public string Method { get; set; }
-        
 
         public CgInvokeCommand(int? channel = null, int? layer = null, int? cgLayer = null, string method = "")
         {

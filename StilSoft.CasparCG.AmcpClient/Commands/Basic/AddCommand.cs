@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using System.ComponentModel.DataAnnotations;
 
@@ -40,10 +39,8 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Basic
         [CommandParameter]
         public string Parameters { get; set; }
 
-
         public AddCommand(int? channel = null, string consumer = null, string parameters = "") : this(channel, null, consumer, parameters)
         {
-
         }
 
         public AddCommand(int? channel = null, int? consumerIndex = null, string consumer = null, string parameters = "")

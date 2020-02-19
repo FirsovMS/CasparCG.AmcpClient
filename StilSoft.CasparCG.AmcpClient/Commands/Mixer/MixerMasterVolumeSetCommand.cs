@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes;
 using StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters;
 using System.ComponentModel.DataAnnotations;
@@ -22,9 +21,9 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
     {
         // MIXER
         // [video_channel:int]
-        // MASTERVOLUME 
+        // MASTERVOLUME
         // {
-        //     [volume:float] 
+        //     [volume:float]
         // }
 
         internal override string SubCommandName { get; } = "MASTERVOLUME";
@@ -34,7 +33,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Mixer
         [NumberToStringCulture("en-US")]
         [CommandParameter]
         public double? Volume { get; set; }
-
 
         public MixerMasterVolumeSetCommand(int? channel = null, double? volume = null)
         {

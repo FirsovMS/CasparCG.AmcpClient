@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using System;
 using System.ComponentModel;
 using System.Reflection;
@@ -35,7 +34,7 @@ namespace StilSoft.CasparCG.AmcpClient.CommandBuilder.Attributes.Converters
 
             if (descriptionAttribute == null)
                 return value.ToString();
-                //throw new InvalidOperationException ($"'{nameof(EnumToStringAttribute)}' attribute can not found '{nameof(DescriptionAttribute)}' attribute on enum '{value.GetType().Name}' value '{value}'.");
+            //throw new InvalidOperationException ($"'{nameof(EnumToStringAttribute)}' attribute can not found '{nameof(DescriptionAttribute)}' attribute on enum '{value.GetType().Name}' value '{value}'.");
 
             return descriptionAttribute.Description;
         }

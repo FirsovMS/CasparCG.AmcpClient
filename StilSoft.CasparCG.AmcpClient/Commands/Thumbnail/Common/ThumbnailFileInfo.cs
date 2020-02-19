@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Common;
 using System;
 using System.Globalization;
@@ -24,15 +23,12 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Thumbnail.Common
         /// </summary>
         public long Size { get; set; }
 
-
         public ThumbnailFileInfo(string fullName) : base(fullName)
         {
-
         }
 
         public ThumbnailFileInfo(string fileName, string filePath) : base(fileName, filePath)
         {
-
         }
 
         public static ThumbnailFileInfo Parse(string data)

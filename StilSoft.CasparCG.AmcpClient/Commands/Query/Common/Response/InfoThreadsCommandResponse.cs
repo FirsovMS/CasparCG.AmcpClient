@@ -8,7 +8,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using StilSoft.CasparCG.AmcpClient.Commands.Query.Common.Info;
 using StilSoft.CasparCG.AmcpClient.Common;
 using System.Collections.Generic;
@@ -18,7 +17,6 @@ namespace StilSoft.CasparCG.AmcpClient.Commands.Query.Common.Response
     public class InfoThreadsCommandResponse : AmcpResponse
     {
         private readonly List<ThreadInfo> _threadList = new List<ThreadInfo>();
-
 
         internal override void ProcessData(AmcpParsedData data)
         {
